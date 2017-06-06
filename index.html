@@ -10,22 +10,36 @@
 
 
     <center>
+
+      <header>
+    <h1>Sign up for news and exclusive deals from Sienci Labs</h1>
+      </header>
       <br>
-    <h1>Collect emails</h1>
-    <p>This is a simple email collection system</p>
-    <br>
-    <form onsubmit="submitInput()"> 
+    <form method="POST"> 
       <h2>Email</h2>
-      <input type="email" name="email">
+      <input id="emailSub" type="email" name="email">
       <br>
-      <input type="submit" value="submit">
+      <input type="button" value="submit"  onclick="submitInput()">
       <br>
     </form>
+<p id="confirmation"></p>
 
-
-<script type="text/javascript" src="script.js"></script>
 
 
     </center>
+
+<script src="script.js"></script>
+
+<br>
+<footer>
+<p id="list"></p>
+
+<button class=bottom onclick="accessList()">Access List</button>
+
+
+
+</footer>
+
+   
   </body>
 </html>
